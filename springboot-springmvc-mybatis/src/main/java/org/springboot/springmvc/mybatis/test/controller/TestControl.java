@@ -1,4 +1,4 @@
-package org.springboot.springmvn.mybatis.test.controller;
+package org.springboot.springmvc.mybatis.test.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -11,8 +11,8 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import org.springboot.springmvn.mybatis.test.entity.User;
-import org.springboot.springmvn.mybatis.test.service.IUserService;
+import org.springboot.springmvc.mybatis.test.entity.User;
+import org.springboot.springmvc.mybatis.test.service.IUserService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

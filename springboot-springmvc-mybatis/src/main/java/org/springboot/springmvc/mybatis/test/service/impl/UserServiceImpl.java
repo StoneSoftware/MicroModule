@@ -1,8 +1,8 @@
-package org.springboot.springmvn.mybatis.test.service.impl;
+package org.springboot.springmvc.mybatis.test.service.impl;
 
-import org.springboot.springmvn.mybatis.test.entity.User;
-import org.springboot.springmvn.mybatis.test.mapper.ITestMapper;
-import org.springboot.springmvn.mybatis.test.service.IUserService;
+import org.springboot.springmvc.mybatis.test.entity.User;
+import org.springboot.springmvc.mybatis.test.mapper.ITestMapper;
+import org.springboot.springmvc.mybatis.test.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

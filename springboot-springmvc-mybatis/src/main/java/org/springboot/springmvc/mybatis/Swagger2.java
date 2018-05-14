@@ -1,4 +1,4 @@
-package org.springboot.springmvn.mybatis;
+package org.springboot.springmvc.mybatis;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

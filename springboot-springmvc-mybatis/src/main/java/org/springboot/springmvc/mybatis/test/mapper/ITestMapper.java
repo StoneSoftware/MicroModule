@@ -1,7 +1,7 @@
-package org.springboot.springmvn.mybatis.test.mapper;
+package org.springboot.springmvc.mybatis.test.mapper;
 
 import org.apache.ibatis.annotations.Select;
-import org.springboot.springmvn.mybatis.test.entity.User;
+import org.springboot.springmvc.mybatis.test.entity.User;
 
 //@Mapper
 public interface ITestMapper {

@@ -1,4 +1,4 @@
-package org.springboot.springmvn.mybatis.security;
+package org.springboot.springmvc.mybatis.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

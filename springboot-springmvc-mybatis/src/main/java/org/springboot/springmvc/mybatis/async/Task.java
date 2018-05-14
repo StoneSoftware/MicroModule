@@ -1,4 +1,4 @@
-package org.springboot.springmvn.mybatis.async;
+package org.springboot.springmvc.mybatis.async;
 
 import java.util.concurrent.Future;
 

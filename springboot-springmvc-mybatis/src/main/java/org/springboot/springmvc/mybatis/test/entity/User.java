@@ -1,4 +1,4 @@
-package org.springboot.springmvn.mybatis.test.entity;
+package org.springboot.springmvc.mybatis.test.entity;
 
 public class User {
 

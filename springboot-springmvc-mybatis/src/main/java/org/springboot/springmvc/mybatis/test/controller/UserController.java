@@ -1,8 +1,8 @@
-package org.springboot.springmvn.mybatis.test.controller;
+package org.springboot.springmvc.mybatis.test.controller;
 
 import java.util.ArrayList;
 
-import org.springboot.springmvn.mybatis.security.JSONResult;
+import org.springboot.springmvc.mybatis.security.JSONResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
