@@ -9,9 +9,9 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>org.stone.module</groupId>
-	<artifactId>springboot-springmvn-mybatis</artifactId>
+	<artifactId>springboot-springmvc-mybatis</artifactId>
 	<version>0.0.1-MODULE-SNAPSHOT</version>
-	<name>springboot-springmvn-mybatis</name>
+	<name>springboot-springmvc-mybatis</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
