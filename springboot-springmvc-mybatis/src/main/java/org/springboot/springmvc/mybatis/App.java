@@ -10,7 +10,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @SpringBootApplication
 // 使用@MapperScan注解通过使用@MapperScan可以指定要扫描的Mapper类的包的路径
 // 使用@Mapper注解为了让DemoMapper能够让别的类进行引用,我们可以在DemMapper类上添加@Mapper注解
-@MapperScan("org.springboot.springmvn.mybatis.*.mapper")
+@MapperScan("org.springboot.springmvc.mybatis.*.mapper")
 // 开启异步执行
 @EnableAsync
 // 开启权限认证

@@ -1,4 +1,4 @@
-package org.springboot.springmvn.mybatis.test.mapper;
+package org.springboot.springmvc.mybatis.test.mapper;
 
 import java.util.concurrent.Future;
 
@@ -6,8 +6,8 @@ import javax.annotation.Resource;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springboot.springmvn.mybatis.async.Task;
-import org.springboot.springmvn.mybatis.test.entity.User;
+import org.springboot.springmvc.mybatis.async.Task;
+import org.springboot.springmvc.mybatis.test.entity.User;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
