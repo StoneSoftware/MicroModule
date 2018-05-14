@@ -23,6 +23,6 @@
 
 	<modules>
 		<module>Module2</module>
-    <module>springboot-springmvn-mybatis</module>
+    <module>springboot-springmvc-mybatis</module>
   </modules>
 </project>
