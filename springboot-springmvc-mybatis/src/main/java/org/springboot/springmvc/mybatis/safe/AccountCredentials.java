@@ -1,21 +1,9 @@
-package org.springboot.springmvc.mybatis.security1.entity;
+package org.springboot.springmvc.mybatis.safe;
 
-/**
- * @author zhaoxinguo on 2017/9/13.
- */
-@Entity
-@Table(name = "tb_user")
-public class User {
+class AccountCredentials {
 
-	@Id
-	@GeneratedValue
-	private long id;
 	private String username;
 	private String password;
-
-	public long getId() {
-		return id;
-	}
 
 	public String getUsername() {
 		return username;

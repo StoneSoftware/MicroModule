@@ -1,13 +1,18 @@
-package org.springboot.springmvc.mybatis.security;
+package org.springboot.springmvc.mybatis.safe;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+@Configuration
+@EnableWebSecurity
+class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
+	// 设置 HTTP 验证规则
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		// 关闭csrf验证
@@ -32,7 +37,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				// 添加一个过滤器验证其他请求的Token是否合法
 				.addFilterBefore(new JWTAuthenticationFilter(),
 						UsernamePasswordAuthenticationFilter.class);
-		super.configure(http);
 	}
 
 	@Override
@@ -42,5 +46,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		auth.authenticationProvider(new CustomAuthenticationProvider());
 
 	}
-
 }

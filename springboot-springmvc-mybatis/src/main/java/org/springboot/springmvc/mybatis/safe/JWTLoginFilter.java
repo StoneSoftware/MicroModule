@@ -1,4 +1,4 @@
-package org.springboot.springmvc.mybatis.security;
+package org.springboot.springmvc.mybatis.safe;
 
 import java.io.IOException;
 
@@ -17,7 +17,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
+class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
 
 	public JWTLoginFilter(String url, AuthenticationManager authManager) {
 		super(new AntPathRequestMatcher(url));

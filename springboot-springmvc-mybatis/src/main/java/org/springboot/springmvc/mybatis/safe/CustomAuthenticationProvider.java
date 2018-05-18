@@ -1,4 +1,4 @@
-package org.springboot.springmvc.mybatis.security;
+package org.springboot.springmvc.mybatis.safe;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 
-public// 自定义身份认证验证组件
+//自定义身份认证验证组件
 class CustomAuthenticationProvider implements AuthenticationProvider {
 
 	@Override

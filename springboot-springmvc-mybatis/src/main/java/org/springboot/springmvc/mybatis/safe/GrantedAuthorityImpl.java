@@ -1,12 +1,8 @@
-package org.springboot.springmvc.mybatis.security;
+package org.springboot.springmvc.mybatis.safe;
 
 import org.springframework.security.core.GrantedAuthority;
 
-public class GrantedAuthorityImpl implements GrantedAuthority {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 5565918995075229553L;
+class GrantedAuthorityImpl implements GrantedAuthority {
 	private String authority;
 
 	public GrantedAuthorityImpl(String authority) {

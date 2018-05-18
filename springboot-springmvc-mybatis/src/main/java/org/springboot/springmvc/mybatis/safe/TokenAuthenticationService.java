@@ -1,4 +1,4 @@
-package org.springboot.springmvc.mybatis.security;
+package org.springboot.springmvc.mybatis.safe;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -16,7 +16,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 
-public class TokenAuthenticationService {
+class TokenAuthenticationService {
 	static final long EXPIRATIONTIME = 432_000_000; // 5天
 	static final String SECRET = "P@ssw02d"; // JWT密码
 	static final String TOKEN_PREFIX = "Bearer"; // Token前缀
