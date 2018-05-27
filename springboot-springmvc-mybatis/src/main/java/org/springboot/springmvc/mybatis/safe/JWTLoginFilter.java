@@ -28,25 +28,31 @@ class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
 	public Authentication attemptAuthentication(HttpServletRequest req,
 			HttpServletResponse res) throws AuthenticationException,
 			IOException, ServletException {
-
+		// ①
 		// JSON反序列化成 AccountCredentials
-		AccountCredentials creds = new ObjectMapper().readValue(
-				req.getInputStream(), AccountCredentials.class);
+		UserVO userVo = new ObjectMapper().readValue(req.getInputStream(),
+				UserVO.class);
 
 		// 返回一个验证令牌
 		return getAuthenticationManager().authenticate(
-				new UsernamePasswordAuthenticationToken(creds.getUsername(),
-						creds.getPassword()));
+				new UsernamePasswordAuthenticationToken(userVo.getUsername(),
+						userVo.getPassword()));
 	}
 
+	/**
+	 * <验证成功>
+	 */
 	@Override
 	protected void successfulAuthentication(HttpServletRequest req,
 			HttpServletResponse res, FilterChain chain, Authentication auth)
 			throws IOException, ServletException {
-
-		TokenAuthenticationService.addAuthentication(res, auth.getName());
+		// ③
+		TokenUtil.addToken(res, auth.getName());
 	}
 
+	/**
+	 * <验证失败>
+	 */
 	@Override
 	protected void unsuccessfulAuthentication(HttpServletRequest request,
 			HttpServletResponse response, AuthenticationException failed)

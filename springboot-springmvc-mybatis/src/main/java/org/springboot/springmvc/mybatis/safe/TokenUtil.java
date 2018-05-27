@@ -16,14 +16,14 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 
-class TokenAuthenticationService {
+class TokenUtil {
 	static final long EXPIRATIONTIME = 432_000_000; // 5天
 	static final String SECRET = "P@ssw02d"; // JWT密码
 	static final String TOKEN_PREFIX = "Bearer"; // Token前缀
 	static final String HEADER_STRING = "Authorization";// 存放Token的Header Key
 
 	// JWT生成方法
-	static void addAuthentication(HttpServletResponse response, String username) {
+	static void addToken(HttpServletResponse response, String username) {
 
 		// 生成JWT
 		String JWT = Jwts
@@ -50,7 +50,7 @@ class TokenAuthenticationService {
 	}
 
 	// JWT验证方法
-	static Authentication getAuthentication(HttpServletRequest request) {
+	static Authentication validateToken(HttpServletRequest request) {
 		// 从Header中拿到token
 		String token = request.getHeader(HEADER_STRING);
 

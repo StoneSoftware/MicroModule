@@ -1,6 +1,6 @@
 package org.springboot.springmvc.mybatis.safe;
 
-class AccountCredentials {
+class UserVO {
 
 	private String username;
 	private String password;
