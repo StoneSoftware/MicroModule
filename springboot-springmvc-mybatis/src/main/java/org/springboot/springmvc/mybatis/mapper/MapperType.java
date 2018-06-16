@@ -1,5 +1,6 @@
 package org.springboot.springmvc.mybatis.mapper;
 
-public enum MapperType {
-	AND, OR;
+public enum MapperType
+{
+    AND, OR;
 }

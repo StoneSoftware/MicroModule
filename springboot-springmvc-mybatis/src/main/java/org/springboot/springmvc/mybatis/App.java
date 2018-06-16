@@ -14,9 +14,11 @@ import org.springframework.scheduling.annotation.EnableAsync;
 // 开启异步执行
 @EnableAsync
 // 开启权限认证
-public class App {
-	public static void main(String[] args) {
-		SpringApplication.run(App.class, args);
-	}
-
+public class App
+{
+    public static void main(String[] args)
+    {
+        SpringApplication.run(App.class, args);
+    }
+    
 }
