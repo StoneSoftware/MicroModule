@@ -8,17 +8,22 @@
 		<artifactId>Service</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+
+
 	<groupId>org.stone.module</groupId>
 	<artifactId>springboot-springmvc-mybatis</artifactId>
 	<version>0.0.1-MODULE-SNAPSHOT</version>
 	<name>springboot-springmvc-mybatis</name>
 	<url>http://maven.apache.org</url>
+
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.7</java.version>
 	</properties>
+
 
 	<dependencies>
 
@@ -73,6 +78,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- httpClient -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+
+
 		<!-- JSON WEB Token -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -84,9 +96,9 @@
 			<version>0.7.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.stone.software.helper</groupId>
+			<groupId>com.github.stonesoftware</groupId>
 			<artifactId>helper</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1-release</version>
 		</dependency>
 	</dependencies>
 </project>
