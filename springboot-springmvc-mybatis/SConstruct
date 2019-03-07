@@ -1,0 +1,10 @@
+import os
+env=Environment(ENV=os.environ)
+env.Replace(JAVAC='javac -encoding UTF-8');
+env['ENV']['LANG']='en_GB.UTF-8'
+compiler = env.Java("classes","src")
+package = env.Jar(target = 'dest11.jar', source = 'classes',JAVAVERSION='1.8')
+env.Default(compiler)
+env.Default(package)
+
+
