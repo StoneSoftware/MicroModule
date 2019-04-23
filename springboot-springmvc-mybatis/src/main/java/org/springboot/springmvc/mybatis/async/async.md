@@ -64,8 +64,7 @@
 		System.err.println("Ok");
 	} 
 ### 4、@Async的事务处理机制
-在@Async标注的方法，同时也用了@Transactional进行了注解，在数据库操作时，无法进行事务管理，如果需要对异步方法进行事务管理，只可以在异步方法的内部方法上添加@Transactional进行事务管理。
-例如： 
+在@Async标注的方法，同时也用了@Transactional进行了注解，在数据库操作时，无法进行事务管理，如果需要对异步方法进行事务管理，只可以在异步方法的内部方法上添加@Transactional进行事务管理。例如： \
 	@Async
 	@Transactional
 	public do() {
