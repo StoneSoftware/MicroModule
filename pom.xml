@@ -25,6 +25,7 @@
 	<modules>
 		<module>springboot-springmvc-mybatis</module>
 		<module>springboot-springmvc-hibernate</module>
+		<module>stone.documents</module>
 	</modules>
 
 	<build>

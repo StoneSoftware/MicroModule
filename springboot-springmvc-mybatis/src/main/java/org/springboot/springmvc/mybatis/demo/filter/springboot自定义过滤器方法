@@ -1,2 +1,0 @@
-Method1.实现一个普通的过滤器,添加一个@WebFilter(urlPatterns = "/*")注解
-Method2.自定义一个普通过滤器,配置注册到FilterRegistrationBean对象中

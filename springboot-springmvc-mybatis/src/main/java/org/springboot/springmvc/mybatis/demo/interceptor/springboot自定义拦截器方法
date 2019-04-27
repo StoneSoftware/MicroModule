@@ -1,3 +1,0 @@
-step1.继承WebMvcConfigureAdapter类，覆盖其addInterceptors接口,注册我们自定义的拦截器
-step2.实现HandlerInterceptor接口，重写接口中的三个方法
-这样我们就可以在用户请求到达controller层实现登录拦截了，所有用户请求都会被拦截，在prehandle方法进行登录判断，返回true则验证通过，否则失败

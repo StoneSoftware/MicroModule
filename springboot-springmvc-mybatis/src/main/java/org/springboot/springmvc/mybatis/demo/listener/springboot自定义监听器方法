@@ -1,2 +1,0 @@
-Method1.实现一个普通的监听器,添加一个@WebListener注解
-Method2.自定义一个普通监听器,配置注册到ServletContextListener对象中

@@ -3,6 +3,7 @@ package org.springboot.springmvc.mybatis;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 //@SpringBootApplication(@Configuration, @EnableAutoConfiguration and @ComponentScan)
@@ -13,7 +14,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @MapperScan("org.springboot.springmvc.mybatis.*.mapper")
 // 开启异步执行
 @EnableAsync
-// 开启权限认证
+// 开启缓存
+@EnableCaching
 public class App
 {
     public static void main(String[] args)
