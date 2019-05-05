@@ -1,6 +1,14 @@
 package org.springboot.springmvc.mybatis.design.pattern.singleton;
 
-final class StaticInnerClassSingleton
+/**
+ * <静态内部类实现懒汉模式单例>
+ * 
+ * @author Administrator
+ * 
+ * @since 2019/4/27
+ *
+ */
+public final class StaticInnerClassSingleton
 {
     
     private StaticInnerClassSingleton()
