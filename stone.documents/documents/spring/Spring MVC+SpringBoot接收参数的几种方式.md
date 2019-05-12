@@ -1,7 +1,7 @@
 # Spring MVC & SpringBoot接收参数的几种方式 #
 ## 一、@RequestParam注解 #
 <font color=blue>1.1、 @RequestParam注解用于获取查询参数。例如url?paramName=paramValue这种形式  </font>\
-<font color=blue>1.2、 RequestParam有4个参数， name|value|required|defaultValue;  name与value的效果是等价的; name与value不能共用,只能二选一</font>
+<font color=blue>1.2、 @RequestParam有4个参数， name|value|required|defaultValue;  name与value的效果是等价的; name与value不能共用,只能二选一</font>
 ``` java
 @RestController
 @RequestMapping("/rest/test/")
