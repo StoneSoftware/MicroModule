@@ -62,3 +62,11 @@ public class Rest
     {
     }
 ```
+## 六、HttpServletRequest # 
+```java
+    @RequestMapping("/test5")
+    public void test5(HttpServletRequest request)
+    {
+        
+    }
+```
